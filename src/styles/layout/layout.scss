@@ -1,0 +1,43 @@
+@use "./module/module.scss";
+@use "./state/state.scss";
+@use"./theme/theme.scss";
+
+section{
+    padding-bottom: 40px;
+}
+
+
+.featured{
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    img{
+        padding-top: 28px;
+        width: 100%;
+    }
+
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+
+    h1{
+        position: absolute;
+        bottom: 10px; 
+        left: 10px; 
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 5px 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    &:hover h1{
+        opacity: 1;
+    }
+
+}
+
+

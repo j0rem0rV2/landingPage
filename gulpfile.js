@@ -4,9 +4,15 @@ const imagemin = require('gulp-imagemin');
 const plumber = require('gulp-plumber');
 
 function styles() {
-    return gulp.src('./src/styles/*.scss')
+    return gulp.src('./src/styles/*.scss', )
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(gulp.dest('./dist/css'));
+}
+
+function styles() {
+    return gulp.src('./src/scripts/**/*.js', )
+        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(gulp.dest('./dist/scripts'));
 }
 
 function plumberPrevent() {
